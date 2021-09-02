@@ -1,0 +1,5 @@
+D:\newproduct\code\cskin\cskin桌面开发UI\winform-ui-master\Teleware.ZPG.Client.Web\bin\Teleware.ZPG.Client.Web.dll
+D:\newproduct\code\cskin\cskin桌面开发UI\winform-ui-master\Teleware.ZPG.Client.Web\bin\Teleware.ZPG.Client.Web.pdb
+D:\newproduct\code\cskin\cskin桌面开发UI\winform-ui-master\Teleware.ZPG.Client.Web\obj\Debug\Teleware.ZPG.Client.Web.csprojResolveAssemblyReference.cache
+D:\newproduct\code\cskin\cskin桌面开发UI\winform-ui-master\Teleware.ZPG.Client.Web\obj\Debug\Teleware.ZPG.Client.Web.dll
+D:\newproduct\code\cskin\cskin桌面开发UI\winform-ui-master\Teleware.ZPG.Client.Web\obj\Debug\Teleware.ZPG.Client.Web.pdb

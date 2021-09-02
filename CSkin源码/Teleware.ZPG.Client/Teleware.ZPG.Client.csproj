@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{951BCA23-EB6D-42D8-A632-CFFB3802AE3D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Teleware.ZPG.Client</RootNamespace>
+    <AssemblyName>Teleware.ZPG.Client</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>0101.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\WebBrowserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WebBrowserControl.Designer.cs">
+      <DependentUpon>WebBrowserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyBoardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeyBoardForm.Designer.cs">
+      <DependentUpon>KeyBoardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingBox\LoadingBoxArgs.cs" />
+    <Compile Include="Module\TradeHangControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\TradeHangControl.Designer.cs">
+      <DependentUpon>TradeHangControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolTip\ToolTipEx.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="WebUrls.cs" />
+    <Compile Include="Controls\ListViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module\NetDisconnectControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\NetDisconnectControl.Designer.cs">
+      <DependentUpon>NetDisconnectControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\TradeFinishControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\TradeFinishControl.Designer.cs">
+      <DependentUpon>TradeFinishControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\TradeReadyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\TradeReadyControl.Designer.cs">
+      <DependentUpon>TradeReadyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\TradeUnStartControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\TradeUnStartControl.Designer.cs">
+      <DependentUpon>TradeUnStartControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WaitControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WaitControl.Designer.cs">
+      <DependentUpon>WaitControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CheckBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolTip\ToolTipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolTip\ToolTipForm.Designer.cs">
+      <DependentUpon>ToolTipForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingBox\LoadingBox.cs" />
+    <Compile Include="Controls\WebBrowserEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBox\MessageIconForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBox\MessageIconForm.Designer.cs">
+      <DependentUpon>MessageIconForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBox\MessageBoxEx.cs" />
+    <Compile Include="MessageBox\MessageBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotifyBox\NotifyBox.cs" />
+    <Compile Include="NotifyBox\NotifyBoxIcon.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SkinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SkinForm.Designer.cs">
+      <DependentUpon>SkinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm1.Designer.cs">
+      <DependentUpon>LoginForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm1.Designer.cs">
+      <DependentUpon>MainForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SkinForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SkinForm1.Designer.cs">
+      <DependentUpon>SkinForm1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\WebBrowserControl.resx">
+      <DependentUpon>WebBrowserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyBoardForm.resx">
+      <DependentUpon>KeyBoardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\NetDisconnectControl.resx">
+      <DependentUpon>NetDisconnectControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\TradeFinishControl.resx">
+      <DependentUpon>TradeFinishControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\TradeHangControl.resx">
+      <DependentUpon>TradeHangControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\TradeReadyControl.resx">
+      <DependentUpon>TradeReadyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\TradeUnStartControl.resx">
+      <DependentUpon>TradeUnStartControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WaitControl.resx">
+      <DependentUpon>WaitControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolTip\ToolTipForm.resx">
+      <DependentUpon>ToolTipForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBox\MessageIconForm.resx">
+      <DependentUpon>MessageIconForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBox\MessageBoxForm.resx">
+      <DependentUpon>MessageBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkinForm.resx">
+      <DependentUpon>SkinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm1.resx">
+      <DependentUpon>LoginForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm1.resx">
+      <DependentUpon>MainForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkinForm1.resx">
+      <DependentUpon>SkinForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <Compile Include="Controls\PanelEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackPalace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_close_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_close_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_close_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_max_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_max_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_max_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_min_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_min_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_min_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_restore_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_restore_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_restore_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox_pushed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox_tick_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox_tick_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox_tick_pushed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSkin\CSkin.csproj">
+      <Project>{7F988DDA-955F-42F2-82EB-D6058FB7FF75}</Project>
+      <Name>CSkin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baojia_normal.png" />
+    <None Include="Resources\baojia_down.png" />
+    <None Include="Resources\baojia_hover.png" />
+    <None Include="Resources\background_mainwnd.png" />
+    <None Include="Resources\RestoreNormlBack.png" />
+    <None Include="Resources\CloseMouseBack.png" />
+    <None Include="Resources\CloseNormlBack.png" />
+    <None Include="Resources\MaxDownBack.png" />
+    <None Include="Resources\CloseDownBack.png" />
+    <None Include="Resources\MaxMouseBack.png" />
+    <None Include="Resources\MaxNormlBack.png" />
+    <None Include="Resources\MiniDownBack.png" />
+    <None Include="Resources\MiniMouseBack.png" />
+    <None Include="Resources\MiniNormlBack.png" />
+    <None Include="Resources\RestoreDownBack.png" />
+    <None Include="Resources\RestoreMouseBack.png" />
+    <Content Include="Resources\skin_tip.png" />
+    <None Include="Resources\tabbtn_bgk_pushed_150.png" />
+    <None Include="Resources\tabbtn_bgk_pushed_84.png" />
+    <None Include="Resources\store_guide_bkg.png" />
+    <None Include="切图\小版天.png" />
+    <None Include="切图\小版时.png" />
+    <None Include="切图\小版秒.png" />
+    <None Include="切图\小版分.png" />
+    <None Include="切图\小版9.png" />
+    <None Include="切图\小版8.png" />
+    <None Include="切图\小版7.png" />
+    <None Include="切图\小版6.png" />
+    <None Include="切图\小版5.png" />
+    <None Include="切图\小版4.png" />
+    <None Include="切图\小版3.png" />
+    <None Include="切图\小版2.png" />
+    <None Include="切图\小版1.png" />
+    <None Include="切图\小版0.png" />
+    <None Include="切图\大版秒.png" />
+    <None Include="切图\大版分.png" />
+    <None Include="切图\大版9.png" />
+    <None Include="切图\大版8.png" />
+    <None Include="切图\大版7.png" />
+    <None Include="切图\大版6.png" />
+    <None Include="切图\大版5.png" />
+    <None Include="切图\大版4.png" />
+    <None Include="切图\大版3.png" />
+    <None Include="切图\大版2.png" />
+    <None Include="切图\大版1.png" />
+    <None Include="切图\大版0.png" />
+    <None Include="切图\背景.png" />
+    <None Include="Resources\SubItemBack.png" />
+    <None Include="Resources\SubItemHoverBack.png" />
+    <None Include="Resources\news_bg.png" />
+    <None Include="Resources\r9.png" />
+    <None Include="Resources\r8.png" />
+    <None Include="Resources\r7.png" />
+    <None Include="Resources\r6.png" />
+    <None Include="Resources\r5.png" />
+    <None Include="Resources\r4.png" />
+    <None Include="Resources\r3.png" />
+    <None Include="Resources\r2.png" />
+    <None Include="Resources\r1.png" />
+    <None Include="Resources\r0.png" />
+    <None Include="Resources\tipicon.png" />
+    <None Include="Resources\note_remind_local.png" />
+    <None Include="Resources\form_border.png" />
+    <None Include="Resources\loading20x20.gif" />
+    <None Include="Resources\bg_default.jpg" />
+    <None Include="Resources\aio_quickbar_cut.png" />
+    <Content Include="0101.ico" />
+    <None Include="Resources\AreaMainPanel.png" />
+    <None Include="Resources\background_blue.png" />
+    <None Include="Resources\bluebase.png" />
+    <Content Include="Resources\btn_allow_down_hover.png" />
+    <Content Include="Resources\btn_allow_down_normal.png" />
+    <Content Include="Resources\btn_allow_up.png" />
+    <Content Include="Resources\btn_keyboard.png" />
+    <Content Include="Resources\btn_login_down.png" />
+    <Content Include="Resources\btn_login_hover.png" />
+    <Content Include="Resources\btn_login_normal.png" />
+    <Content Include="Resources\btn_mima_hover.png" />
+    <Content Include="Resources\btn_mima_normal.png" />
+    <Content Include="Resources\btn_mima_press.png" />
+    <Content Include="Resources\btn_zhuce_hover.png" />
+    <Content Include="Resources\btn_zhuce_normal.png" />
+    <Content Include="Resources\btn_zhuce_press.png" />
+    <None Include="Resources\close_down.png" />
+    <None Include="Resources\close_hover.png" />
+    <None Include="Resources\close_n.png" />
+    <Content Include="Resources\0.png" />
+    <Content Include="Resources\1.png" />
+    <Content Include="Resources\2.png" />
+    <Content Include="Resources\3.png" />
+    <Content Include="Resources\4.png" />
+    <Content Include="Resources\5.png" />
+    <Content Include="Resources\6.png" />
+    <Content Include="Resources\7.png" />
+    <Content Include="Resources\8.png" />
+    <Content Include="Resources\9.png" />
+    <None Include="Resources\countdown.png" />
+    <None Include="Resources\buddytips_arrow_down.png" />
+    <None Include="Resources\buddytips_arrow_up.png" />
+    <None Include="Resources\Edit_Tips_1.png" />
+    <Content Include="Resources\ellipsis.gif" />
+    <None Include="Resources\glyphicons_309_comments.png" />
+    <Content Include="Resources\head.png" />
+    <None Include="Resources\hot_background.png" />
+    <Content Include="Resources\jyjs.png" />
+    <Content Include="Resources\jywks.png" />
+    <None Include="Resources\tab_PageHover.png" />
+    <None Include="Resources\tab_PageDown.png" />
+    <None Include="Resources\wlzd.png" />
+    <None Include="Resources\icon_info.png" />
+    <None Include="Resources\btn_normal.png" />
+    <None Include="Resources\btn_down.png" />
+    <None Include="Resources\btn_hover.png" />
+    <Content Include="Resources\imgLoadding.gif" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\msg_warning.png" />
+    <None Include="Resources\msg_info.png" />
+    <None Include="Resources\msg_question.png" />
+    <None Include="Resources\msg_error.png" />
+    <None Include="Resources\msg_ok.png" />
+    <None Include="Resources\notify_fail.png" />
+    <None Include="Resources\notify_info.png" />
+    <None Include="Resources\notify_success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

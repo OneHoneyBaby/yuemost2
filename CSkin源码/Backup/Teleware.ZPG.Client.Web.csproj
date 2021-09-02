@@ -1,0 +1,712 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B05ED2D-4E79-4A9B-B539-F7F35DA8DE92}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Teleware.ZPG.Client.Web</RootNamespace>
+    <AssemblyName>Teleware.ZPG.Client.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Login.aspx" />
+    <Content Include="res\Affiche.htm" />
+    <Content Include="res\css\main.css" />
+    <Content Include="Global.asax" />
+    <Content Include="res\ApplyInfo.htm" />
+    <Content Include="res\TradeDetail.htm" />
+    <Content Include="res\TradeResult.htm" />
+    <Content Include="web\css\content.css" />
+    <Content Include="web\dylsh.htm" />
+    <Content Include="web\ggxx.htm" />
+    <Content Include="web\css\default.css" />
+    <Content Include="web\css\Index.css" />
+    <Content Include="web\download.htm" />
+    <Content Include="web\ggcx.htm" />
+    <Content Include="web\images\icon_yes.jpg" />
+    <Content Include="web\images\tabStrip\close.gif" />
+    <Content Include="web\images\tabStrip\ggxx.gif" />
+    <Content Include="web\images\tabStrip\hover_tab_bg.gif" />
+    <Content Include="web\images\tabStrip\hover_tab_left_icon.gif" />
+    <Content Include="web\images\tabStrip\hover_tab_right_icon.gif" />
+    <Content Include="web\images\tabStrip\hyb.gif" />
+    <Content Include="web\images\tabStrip\jmrz.gif" />
+    <Content Include="web\images\tabStrip\jytj.gif" />
+    <Content Include="web\images\tabStrip\jyxz.gif" />
+    <Content Include="web\images\tabStrip\selected_tab_bg.gif" />
+    <Content Include="web\images\tabStrip\selected_tab_left_icon.gif" />
+    <Content Include="web\images\tabStrip\selected_tab_right_icon.gif" />
+    <Content Include="web\images\tabStrip\tab_bg.gif" />
+    <Content Include="web\images\tabStrip\tab_left_icon.gif" />
+    <Content Include="web\images\tabStrip\tab_right_icon.gif" />
+    <Content Include="web\images\tabStrip\zdxx.gif" />
+    <Content Include="web\css\tabStrip.css" />
+    <Content Include="web\css\style.css" />
+    <Content Include="web\favicon.ico" />
+    <Content Include="web\GuestBook.htm" />
+    <Content Include="web\HTMLPage1.htm" />
+    <Content Include="web\images\ABodyBottom.gif" />
+    <Content Include="web\images\ABodyBottomLeft.gif" />
+    <Content Include="web\images\ABodyBottomRight.gif" />
+    <Content Include="web\images\ABodyLeft.gif" />
+    <Content Include="web\images\ABodyRight.gif" />
+    <Content Include="web\images\ABodyTop.gif" />
+    <Content Include="web\images\ABodyTopLeft.gif" />
+    <Content Include="web\images\ABodyTopRight.gif" />
+    <Content Include="web\images\address_bg.jpg" />
+    <Content Include="web\images\add_off.gif" />
+    <Content Include="web\images\add_on.gif" />
+    <Content Include="web\images\back_off.gif" />
+    <Content Include="web\images\back_on.gif" />
+    <Content Include="web\images\banner.jpg" />
+    <Content Include="web\images\banner_bg.jpg" />
+    <Content Include="web\images\BBodyTop.gif" />
+    <Content Include="web\images\bg_list.gif" />
+    <Content Include="web\images\body.gif" />
+    <Content Include="web\images\bodybg.gif" />
+    <Content Include="web\images\bodybg_bak.gif" />
+    <Content Include="web\images\border.png" />
+    <Content Include="web\images\Bottom_bg.jpg" />
+    <Content Include="web\images\Button_bg.jpg" />
+    <Content Include="web\images\Button_bg_red.jpg" />
+    <Content Include="web\images\button_index.jpg" />
+    <Content Include="web\images\buy_top.jpg" />
+    <Content Include="web\images\C1AImage.gif" />
+    <Content Include="web\images\C1AItemIcon.gif" />
+    <Content Include="web\images\C1ATitle.gif" />
+    <Content Include="web\images\C1ATitleIcon.gif" />
+    <Content Include="web\images\C1ATitleIconR.gif" />
+    <Content Include="web\images\C1BImage.gif" />
+    <Content Include="web\images\C1BTitle.gif" />
+    <Content Include="web\images\C1BTitleIcon.gif" />
+    <Content Include="web\images\C1BTitleIconR.gif" />
+    <Content Include="web\images\C1CImage.gif" />
+    <Content Include="web\images\C1CTitle.gif" />
+    <Content Include="web\images\C1CTitleIcon.gif" />
+    <Content Include="web\images\C1CTitleIconR.gif" />
+    <Content Include="web\images\C2ATitle.gif" />
+    <Content Include="web\images\C2ATitleIcon.gif" />
+    <Content Include="web\images\C2ATitleIconR.gif" />
+    <Content Include="web\images\C2BItemColumn.gif" />
+    <Content Include="web\images\C2CImage.gif" />
+    <Content Include="web\images\C2CItem1.gif" />
+    <Content Include="web\images\C2CItemIcon.gif" />
+    <Content Include="web\images\C2CTitle.gif" />
+    <Content Include="web\images\C2CTitleIcon.gif" />
+    <Content Include="web\images\C2CTitleIconR.gif" />
+    <Content Include="web\images\city.gif" />
+    <Content Include="web\images\city2.gif" />
+    <Content Include="web\images\city\三明.jpg" />
+    <Content Include="web\images\city\南平.jpg" />
+    <Content Include="web\images\city\厦门.jpg" />
+    <Content Include="web\images\city\宁德.jpg" />
+    <Content Include="web\images\city\泉州.jpg" />
+    <Content Include="web\images\city\漳州.jpg" />
+    <Content Include="web\images\city\福州.jpg" />
+    <Content Include="web\images\city\莆田.jpg" />
+    <Content Include="web\images\city\龙岩.jpg" />
+    <Content Include="web\images\cjwtjd.jpg" />
+    <Content Include="web\images\ContentTitle.gif" />
+    <Content Include="web\images\contextMenu\add_action.gif" />
+    <Content Include="web\images\contextMenu\add_obj.gif" />
+    <Content Include="web\images\contextMenu\add_step.gif" />
+    <Content Include="web\images\contextMenu\del_obj.gif" />
+    <Content Include="web\images\contextMenu\edit_obj.gif" />
+    <Content Include="web\images\contextMenu\opensub.gif" />
+    <Content Include="web\images\contextMenu\refresh_vml.gif" />
+    <Content Include="web\images\contextMenu\save.gif" />
+    <Content Include="web\images\contextMenu\sendmsg.gif" />
+    <Content Include="web\images\contextMenu\view_obj.gif" />
+    <Content Include="web\images\contextMenu\view_obj1.gif" />
+    <Content Include="web\images\controls.png" />
+    <Content Include="web\images\DATE_D.gif" />
+    <Content Include="web\images\DeleteIco-1.gif" />
+    <Content Include="web\images\delete_off.gif" />
+    <Content Include="web\images\delete_on.gif" />
+    <Content Include="web\images\DownLoad.gif" />
+    <Content Include="web\images\DTitle.jpg" />
+    <Content Include="web\images\DTitleIcon.jpg" />
+    <Content Include="web\images\DTitleIconR.jpg" />
+    <Content Include="web\images\EditIco-1.gif" />
+    <Content Include="web\images\editImg\ALEFT.GIF" />
+    <Content Include="web\images\editImg\ARIGHT.GIF" />
+    <Content Include="web\images\editImg\BGCOLOR.GIF" />
+    <Content Include="web\images\editImg\BLIST.GIF" />
+    <Content Include="web\images\editImg\BOLD.GIF" />
+    <Content Include="web\images\editImg\CENTER.GIF" />
+    <Content Include="web\images\editImg\COPY.GIF" />
+    <Content Include="web\images\editImg\CUT.GIF" />
+    <Content Include="web\images\editImg\fontcolor.gif" />
+    <Content Include="web\images\editImg\ILEFT.GIF" />
+    <Content Include="web\images\editImg\IMG.GIF" />
+    <Content Include="web\images\editImg\IRIGHT.GIF" />
+    <Content Include="web\images\editImg\ITALIC.GIF" />
+    <Content Include="web\images\editImg\NLIST.GIF" />
+    <Content Include="web\images\editImg\PASTE.GIF" />
+    <Content Include="web\images\editImg\REDO.GIF" />
+    <Content Include="web\images\editImg\SOURCE.GIF" />
+    <Content Include="web\images\editImg\TABLE.GIF" />
+    <Content Include="web\images\editImg\UNDER.GIF" />
+    <Content Include="web\images\editImg\UNDO.GIF" />
+    <Content Include="web\images\editImg\WLINK.GIF" />
+    <Content Include="web\images\EditTitle.gif" />
+    <Content Include="web\images\EditTitleIcon.gif" />
+    <Content Include="web\images\EditTitleIconR.gif" />
+    <Content Include="web\images\edit_off.gif" />
+    <Content Include="web\images\edit_on.gif" />
+    <Content Include="web\images\End_bg.jpg" />
+    <Content Include="web\images\End_top.jpg" />
+    <Content Include="web\images\flash.gif" />
+    <Content Include="web\images\flash01.gif" />
+    <Content Include="web\images\flash011.gif" />
+    <Content Include="web\images\flash02.gif" />
+    <Content Include="web\images\flash022.gif" />
+    <Content Include="web\images\flash03.gif" />
+    <Content Include="web\images\flash033.gif" />
+    <Content Include="web\images\flash044.gif" />
+    <Content Include="web\images\flash055.gif" />
+    <Content Include="web\images\flash06.gif" />
+    <Content Include="web\images\flash066.gif" />
+    <Content Include="web\images\flash077.gif" />
+    <Content Include="web\images\footer.gif" />
+    <Content Include="web\images\FunToolBar.gif" />
+    <Content Include="web\images\gray.gif" />
+    <Content Include="web\images\gridheader_background.gif" />
+    <Content Include="web\images\header.gif" />
+    <Content Include="web\images\index_bg.jpg" />
+    <Content Include="web\images\jmrczbz.jpg" />
+    <Content Include="web\images\jmrczbz_bg.jpg" />
+    <Content Include="web\images\jmrczbz_icon.gif" />
+    <Content Include="web\images\jmrczbz_line.jpg" />
+    <Content Include="web\images\jmsqjgcx.jpg" />
+    <Content Include="web\images\jmsq_bg.jpg" />
+    <Content Include="web\images\jmsq_bottom.jpg" />
+    <Content Include="web\images\jmsq_FU.jpg" />
+    <Content Include="web\images\jmsq_title_bg.jpg" />
+    <Content Include="web\images\jmsq_title_left.jpg" />
+    <Content Include="web\images\jmsq_top.jpg" />
+    <Content Include="web\images\jy_top.jpg" />
+    <Content Include="web\images\L1ABodybg.gif" />
+    <Content Include="web\images\L1ABodybg1.gif" />
+    <Content Include="web\images\L1ABodybg2.gif" />
+    <Content Include="web\images\L1AItemIcon.gif" />
+    <Content Include="web\images\L1ATitle.gif" />
+    <Content Include="web\images\L1ATitleBg.gif" />
+    <Content Include="web\images\L1ATitleIcon.gif" />
+    <Content Include="web\images\L1ATitleIconR.gif" />
+    <Content Include="web\images\L1BBody.gif" />
+    <Content Include="web\images\L1BBTitleIcon.gif" />
+    <Content Include="web\images\L1BItemIcon.gif" />
+    <Content Include="web\images\L1BTitle.gif" />
+    <Content Include="web\images\L1BTitleIcon.gif" />
+    <Content Include="web\images\L1BTitleIconR.gif" />
+    <Content Include="web\images\L1CBody.gif" />
+    <Content Include="web\images\L1CTitle.gif" />
+    <Content Include="web\images\L1CTitleIcon.gif" />
+    <Content Include="web\images\L1CTitleIconR.gif" />
+    <Content Include="web\images\L1DTitle.gif" />
+    <Content Include="web\images\L1DTitleIcon.gif" />
+    <Content Include="web\images\L1DTitleIconR.gif" />
+    <Content Include="web\images\land.gif" />
+    <Content Include="web\images\line.gif" />
+    <Content Include="web\images\line_br.gif" />
+    <Content Include="web\images\links\1.jpg" />
+    <Content Include="web\images\links\2.jpg" />
+    <Content Include="web\images\links\3.jpg" />
+    <Content Include="web\images\links\4.jpg" />
+    <Content Include="web\images\links\5.jpg" />
+    <Content Include="web\images\links\6.jpg" />
+    <Content Include="web\images\links\yqlj_bottom5.gif" />
+    <Content Include="web\images\list_head.jpg" />
+    <Content Include="web\images\list_line.jpg" />
+    <Content Include="web\images\list_sl_head.jpg" />
+    <Content Include="web\images\Lm_bg.jpg" />
+    <Content Include="web\images\Lm_rightbg.jpg" />
+    <Content Include="web\images\loading.gif" />
+    <Content Include="web\images\loading_background.png" />
+    <Content Include="web\images\logo.gif" />
+    <Content Include="web\images\logo.jpg" />
+    <Content Include="web\images\logo1.gif" />
+    <Content Include="web\images\menu_bg.jpg" />
+    <Content Include="web\images\menu_left.jpg" />
+    <Content Include="web\images\menu_line.jpg" />
+    <Content Include="web\images\menu_right.jpg" />
+    <Content Include="web\images\menu_sl_bg.jpg" />
+    <Content Include="web\images\navbg.gif" />
+    <Content Include="web\images\Navigation_BG.jpg" />
+    <Content Include="web\images\Navigation_Left.jpg" />
+    <Content Include="web\images\Navigation_Right.jpg" />
+    <Content Include="web\images\NaviItemRight.gif" />
+    <Content Include="web\images\navitem.gif" />
+    <Content Include="web\images\NaviTopItem.gif" />
+    <Content Include="web\images\NaviTopLeft.gif" />
+    <Content Include="web\images\NaviTopOver.gif" />
+    <Content Include="web\images\NaviTopRight.gif" />
+    <Content Include="web\images\NaviTopSelect.gif" />
+    <Content Include="web\images\new.gif" />
+    <Content Include="web\images\newbm.gif" />
+    <Content Include="web\images\news.gif" />
+    <Content Include="web\images\news_head.jpg" />
+    <Content Include="web\images\news_head_long.jpg" />
+    <Content Include="web\images\newzt.gif" />
+    <Content Include="web\images\newzw.gif" />
+    <Content Include="web\images\overlay.png" />
+    <Content Include="web\images\policy_bg.jpg" />
+    <Content Include="web\images\policy_house.jpg" />
+    <Content Include="web\images\policy_left.jpg" />
+    <Content Include="web\images\policy_right.jpg" />
+    <Content Include="web\images\question.gif" />
+    <Content Include="web\images\question2.gif" />
+    <Content Include="web\images\question3.gif" />
+    <Content Include="web\images\R1ABody.gif" />
+    <Content Include="web\images\R1AImage.gif" />
+    <Content Include="web\images\R1AItemIcon.gif" />
+    <Content Include="web\images\R1ATitle.gif" />
+    <Content Include="web\images\R1ATitleIcon.gif" />
+    <Content Include="web\images\R1ATitleIconR.gif" />
+    <Content Include="web\images\R1ATop.gif" />
+    <Content Include="web\images\R1BBody.gif" />
+    <Content Include="web\images\R1BItemIcon.gif" />
+    <Content Include="web\images\R1BTitle.gif" />
+    <Content Include="web\images\R1BTitleIcon.gif" />
+    <Content Include="web\images\R1BTitleIconR.gif" />
+    <Content Include="web\images\R1CBody.gif" />
+    <Content Include="web\images\R1CItemIcon.gif" />
+    <Content Include="web\images\R1CTitle.gif" />
+    <Content Include="web\images\R1CTitleIcon.gif" />
+    <Content Include="web\images\R1CTitleIconR.gif" />
+    <Content Include="web\images\refresh_off.gif" />
+    <Content Include="web\images\refresh_on.gif" />
+    <Content Include="web\images\save.gif" />
+    <Content Include="web\images\save_off.gif" />
+    <Content Include="web\images\save_on.gif" />
+    <Content Include="web\images\Search_BG.jpg" />
+    <Content Include="web\images\Search_sl_BG.jpg" />
+    <Content Include="web\images\send_no.jpg" />
+    <Content Include="web\images\send_ok.jpg" />
+    <Content Include="web\images\SL_bg.jpg" />
+    <Content Include="web\images\SL_bottom.jpg" />
+    <Content Include="web\images\SL_content.jpg" />
+    <Content Include="web\images\SL_top.jpg" />
+    <Content Include="web\images\sss.jpg" />
+    <Content Include="web\images\TableResult_Bottom_left.jpg" />
+    <Content Include="web\images\TableResult_Bottom_right.jpg" />
+    <Content Include="web\images\TableResult_Header_left.jpg" />
+    <Content Include="web\images\TableResult_Header_right.jpg" />
+    <Content Include="web\images\table_top_bg.jpg" />
+    <Content Include="web\images\table_top_left.jpg" />
+    <Content Include="web\images\table_top_right.jpg" />
+    <Content Include="web\images\tdcrjggg.jpg" />
+    <Content Include="web\images\time.gif" />
+    <Content Include="web\images\top_bg.gif" />
+    <Content Include="web\images\top_bg.jpg" />
+    <Content Include="web\images\Top_left_pic.png" />
+    <Content Include="web\images\town.gif" />
+    <Content Include="web\images\userlogin.gif" />
+    <Content Include="web\images\view_off.gif" />
+    <Content Include="web\images\view_on.gif" />
+    <Content Include="web\images\icon_warning.jpg" />
+    <Content Include="web\images\wstdcrgg.jpg" />
+    <Content Include="web\images\wstdcrjggs.jpg" />
+    <Content Include="web\images\XcContainer_Bottom.gif" />
+    <Content Include="web\images\XcContainer_Header.gif" />
+    <Content Include="web\images\year.gif" />
+    <Content Include="web\images\yellow.gif" />
+    <Content Include="web\images\yonghu.gif" />
+    <Content Include="web\images\zcfg.jpg" />
+    <Content Include="web\images\zhuche.gif" />
+    <Content Include="web\images\zmrj.jpg" />
+    <Content Include="web\images\zswd.jpg" />
+    <Content Include="web\images\zxly.jpg" />
+    <Content Include="web\images\Zxt.gif" />
+    <Content Include="web\index.htm" />
+    <Content Include="web\jggs.htm" />
+    <Content Include="web\jmsq1.htm" />
+    <Content Include="web\jmsq2.htm" />
+    <Content Include="web\jmsq4.htm" />
+    <Content Include="web\js\jquery-1.7.1.min.js" />
+    <Content Include="web\js\TabStrip.js" />
+    <Content Include="web\jygz.htm" />
+    <Content Include="web\jylc.htm" />
+    <Content Include="web\qa.htm" />
+    <Content Include="web\qa_content.htm" />
+    <Content Include="web\questions.htm" />
+    <Content Include="web\zdxx.htm" />
+    <Content Include="web\jmrz.htm" />
+    <Content Include="web_admin\css\content.css" />
+    <Content Include="web_admin\css\default.css" />
+    <Content Include="web_admin\css\login.css" />
+    <Content Include="web_admin\css\tabStrip.css" />
+    <Content Include="web_admin\images\400.gif" />
+    <Content Include="web_admin\images\404.gif" />
+    <Content Include="web_admin\images\500.gif" />
+    <Content Include="web_admin\images\ABodyBottom.gif" />
+    <Content Include="web_admin\images\ABodyBottomLeft.gif" />
+    <Content Include="web_admin\images\ABodyBottomRight.gif" />
+    <Content Include="web_admin\images\ABodyLeft.gif" />
+    <Content Include="web_admin\images\ABodyRight.gif" />
+    <Content Include="web_admin\images\ABodyTopLeft.gif" />
+    <Content Include="web_admin\images\ABodyTopRight.gif" />
+    <Content Include="web_admin\images\add_off.gif" />
+    <Content Include="web_admin\images\add_on.gif" />
+    <Content Include="web_admin\images\back_off.gif" />
+    <Content Include="web_admin\images\back_on.gif" />
+    <Content Include="web_admin\images\bg_list.gif" />
+    <Content Include="web_admin\images\body.gif" />
+    <Content Include="web_admin\images\bodynew.gif" />
+    <Content Include="web_admin\images\border.png" />
+    <Content Include="web_admin\images\btn_purpose.gif" />
+    <Content Include="web_admin\images\button_bg.jpg" />
+    <Content Include="web_admin\images\button_Down.gif" />
+    <Content Include="web_admin\images\button_index.jpg" />
+    <Content Include="web_admin\images\button_On.gif" />
+    <Content Include="web_admin\images\C1AItemIcon.gif" />
+    <Content Include="web_admin\images\C1ATitle.gif" />
+    <Content Include="web_admin\images\C1ATitleIcon.gif" />
+    <Content Include="web_admin\images\C1ATitleIconR.gif" />
+    <Content Include="web_admin\images\C1BTitle.gif" />
+    <Content Include="web_admin\images\C1BTitleIcon.gif" />
+    <Content Include="web_admin\images\C1BTitleIconR.gif" />
+    <Content Include="web_admin\images\C1CTitle.gif" />
+    <Content Include="web_admin\images\C1CTitleIcon.gif" />
+    <Content Include="web_admin\images\C1CTitleIconR.gif" />
+    <Content Include="web_admin\images\C2ATitle.gif" />
+    <Content Include="web_admin\images\C2ATitleIcon.gif" />
+    <Content Include="web_admin\images\C2ATitleIconR.gif" />
+    <Content Include="web_admin\images\C2BItemColumn.gif" />
+    <Content Include="web_admin\images\C2CItem1.gif" />
+    <Content Include="web_admin\images\C2CItemIcon.gif" />
+    <Content Include="web_admin\images\C2CTitle.gif" />
+    <Content Include="web_admin\images\C2CTitleIcon.gif" />
+    <Content Include="web_admin\images\C2CTitleIconR.gif" />
+    <Content Include="web_admin\images\cancel.png" />
+    <Content Include="web_admin\images\checked.gif" />
+    <Content Include="web_admin\images\close.gif" />
+    <Content Include="web_admin\images\close1.gif" />
+    <Content Include="web_admin\images\ContentTitle.gif" />
+    <Content Include="web_admin\images\contextMenu\add_action.gif" />
+    <Content Include="web_admin\images\contextMenu\add_obj.gif" />
+    <Content Include="web_admin\images\contextMenu\add_step.gif" />
+    <Content Include="web_admin\images\contextMenu\del_obj.gif" />
+    <Content Include="web_admin\images\contextMenu\edit_obj.gif" />
+    <Content Include="web_admin\images\contextMenu\opensub.gif" />
+    <Content Include="web_admin\images\contextMenu\refresh_vml.gif" />
+    <Content Include="web_admin\images\contextMenu\save.gif" />
+    <Content Include="web_admin\images\contextMenu\sendmsg.gif" />
+    <Content Include="web_admin\images\contextMenu\view_obj.gif" />
+    <Content Include="web_admin\images\contextMenu\view_obj1.gif" />
+    <Content Include="web_admin\images\DATE_D.gif" />
+    <Content Include="web_admin\images\delbg.jpg" />
+    <Content Include="web_admin\images\DeleteIco-1.gif" />
+    <Content Include="web_admin\images\delete_off.gif" />
+    <Content Include="web_admin\images\delete_on.gif" />
+    <Content Include="web_admin\images\DownLoad.gif" />
+    <Content Include="web_admin\images\DTitle.jpg" />
+    <Content Include="web_admin\images\DTitleIcon.gif" />
+    <Content Include="web_admin\images\DTitleIcon.jpg" />
+    <Content Include="web_admin\images\DTitleIconR.gif" />
+    <Content Include="web_admin\images\DTitleIconR.jpg" />
+    <Content Include="web_admin\images\EditIco-1.gif" />
+    <Content Include="web_admin\images\EditImg\ALEFT.GIF" />
+    <Content Include="web_admin\images\EditImg\ARIGHT.GIF" />
+    <Content Include="web_admin\images\EditImg\BGCOLOR.GIF" />
+    <Content Include="web_admin\images\EditImg\BLIST.GIF" />
+    <Content Include="web_admin\images\EditImg\BOLD.GIF" />
+    <Content Include="web_admin\images\EditImg\CENTER.GIF" />
+    <Content Include="web_admin\images\EditImg\COPY.GIF" />
+    <Content Include="web_admin\images\EditImg\CUT.GIF" />
+    <Content Include="web_admin\images\EditImg\fontcolor.gif" />
+    <Content Include="web_admin\images\EditImg\ILEFT.GIF" />
+    <Content Include="web_admin\images\EditImg\IMG.GIF" />
+    <Content Include="web_admin\images\EditImg\IRIGHT.GIF" />
+    <Content Include="web_admin\images\EditImg\ITALIC.GIF" />
+    <Content Include="web_admin\images\EditImg\NLIST.GIF" />
+    <Content Include="web_admin\images\EditImg\PASTE.GIF" />
+    <Content Include="web_admin\images\EditImg\REDO.GIF" />
+    <Content Include="web_admin\images\EditImg\SOURCE.GIF" />
+    <Content Include="web_admin\images\EditImg\TABLE.GIF" />
+    <Content Include="web_admin\images\EditImg\UNDER.GIF" />
+    <Content Include="web_admin\images\EditImg\UNDO.GIF" />
+    <Content Include="web_admin\images\EditImg\WLINK.GIF" />
+    <Content Include="web_admin\images\EditTitle.gif" />
+    <Content Include="web_admin\images\EditTitleIcon.gif" />
+    <Content Include="web_admin\images\EditTitleIconR.gif" />
+    <Content Include="web_admin\images\EditTitleIconRB.gif" />
+    <Content Include="web_admin\images\edit_off.gif" />
+    <Content Include="web_admin\images\edit_on.gif" />
+    <Content Include="web_admin\images\footer.gif" />
+    <Content Include="web_admin\images\Frames\Head_BG.jpg" />
+    <Content Include="web_admin\images\Frames\Head_Title.jpg" />
+    <Content Include="web_admin\images\Frames\HideButton.png" />
+    <Content Include="web_admin\images\Frames\LeftMenu_BG.jpg" />
+    <Content Include="web_admin\images\Frames\Menu_BG.jpg" />
+    <Content Include="web_admin\images\Frames\ShowButton.png" />
+    <Content Include="web_admin\images\Frames\sx.png" />
+    <Content Include="web_admin\images\Frames\tc.png" />
+    <Content Include="web_admin\images\Frames\zx.png" />
+    <Content Include="web_admin\images\FunToolBar.gif" />
+    <Content Include="web_admin\images\gridbackground.gif" />
+    <Content Include="web_admin\images\gridheader_background.gif" />
+    <Content Include="web_admin\images\header.gif" />
+    <Content Include="web_admin\images\Hengtiao.gif" />
+    <Content Include="web_admin\images\hidbanner_off.gif" />
+    <Content Include="web_admin\images\hidbanner_on.gif" />
+    <Content Include="web_admin\images\Icon\add.gif" />
+    <Content Include="web_admin\images\Icon\applications.gif" />
+    <Content Include="web_admin\images\Icon\apps.gif" />
+    <Content Include="web_admin\images\Icon\cancel.gif" />
+    <Content Include="web_admin\images\Icon\computer.gif" />
+    <Content Include="web_admin\images\Icon\configure.gif" />
+    <Content Include="web_admin\images\Icon\delete.gif" />
+    <Content Include="web_admin\images\Icon\edit.gif" />
+    <Content Include="web_admin\images\Icon\folder.gif" />
+    <Content Include="web_admin\images\Icon\folder_find.gif" />
+    <Content Include="web_admin\images\Icon\folder_new.gif" />
+    <Content Include="web_admin\images\Icon\large icons.gif" />
+    <Content Include="web_admin\images\Icon\refresh.gif" />
+    <Content Include="web_admin\images\Icon\view.gif" />
+    <Content Include="web_admin\images\index_bg.jpg" />
+    <Content Include="web_admin\images\L1ABodybg.gif" />
+    <Content Include="web_admin\images\L1ABodybg1.gif" />
+    <Content Include="web_admin\images\L1AItemIcon.gif" />
+    <Content Include="web_admin\images\L1ATitle.gif" />
+    <Content Include="web_admin\images\L1ATitleIcon.gif" />
+    <Content Include="web_admin\images\L1ATitleIconR.gif" />
+    <Content Include="web_admin\images\L1BBody.gif" />
+    <Content Include="web_admin\images\L1BBTitleIcon.gif" />
+    <Content Include="web_admin\images\L1BItemIcon.gif" />
+    <Content Include="web_admin\images\L1BTitle.gif" />
+    <Content Include="web_admin\images\L1BTitleIcon.gif" />
+    <Content Include="web_admin\images\L1BTitleIconR.gif" />
+    <Content Include="web_admin\images\L1CBody.gif" />
+    <Content Include="web_admin\images\L1CTitle.gif" />
+    <Content Include="web_admin\images\L1CTitleIcon.gif" />
+    <Content Include="web_admin\images\L1CTitleIconR.gif" />
+    <Content Include="web_admin\images\L1DTitle.gif" />
+    <Content Include="web_admin\images\L1DTitleIcon.gif" />
+    <Content Include="web_admin\images\L1DTitleIconR.gif" />
+    <Content Include="web_admin\images\land.gif" />
+    <Content Include="web_admin\images\leftturn.jpg" />
+    <Content Include="web_admin\images\line.gif" />
+    <Content Include="web_admin\images\lines\dash.gif" />
+    <Content Include="web_admin\images\lines\dashminus.gif" />
+    <Content Include="web_admin\images\lines\dashplus.gif" />
+    <Content Include="web_admin\images\lines\i.gif" />
+    <Content Include="web_admin\images\lines\l.gif" />
+    <Content Include="web_admin\images\lines\lminus.gif" />
+    <Content Include="web_admin\images\lines\lplus.gif" />
+    <Content Include="web_admin\images\lines\minus.gif" />
+    <Content Include="web_admin\images\lines\noexpand.gif" />
+    <Content Include="web_admin\images\lines\plus.gif" />
+    <Content Include="web_admin\images\lines\r.gif" />
+    <Content Include="web_admin\images\lines\rminus.gif" />
+    <Content Include="web_admin\images\lines\rplus.gif" />
+    <Content Include="web_admin\images\lines\t.gif" />
+    <Content Include="web_admin\images\lines\tminus.gif" />
+    <Content Include="web_admin\images\lines\tplus.gif" />
+    <Content Include="web_admin\images\loading.gif" />
+    <Content Include="web_admin\images\loading_background.png" />
+    <Content Include="web_admin\images\logo1.gif" />
+    <Content Include="web_admin\images\lookimg.jpg" />
+    <Content Include="web_admin\images\MenuFunToolBar.gif" />
+    <Content Include="web_admin\images\minus.gif" />
+    <Content Include="web_admin\images\navbg.gif" />
+    <Content Include="web_admin\images\navitem.gif" />
+    <Content Include="web_admin\images\NaviTopItem.gif" />
+    <Content Include="web_admin\images\NaviTopLeft.gif" />
+    <Content Include="web_admin\images\NaviTopOver.gif" />
+    <Content Include="web_admin\images\NaviTopRight.gif" />
+    <Content Include="web_admin\images\NaviTopSelect.gif" />
+    <Content Include="web_admin\images\Operation_off.gif" />
+    <Content Include="web_admin\images\Operation_on.gif" />
+    <Content Include="web_admin\images\overlay.png" />
+    <Content Include="web_admin\images\plusik.gif" />
+    <Content Include="web_admin\images\R1ABody.gif" />
+    <Content Include="web_admin\images\R1AItemIcon.gif" />
+    <Content Include="web_admin\images\R1ATitle.gif" />
+    <Content Include="web_admin\images\R1ATitleIcon.gif" />
+    <Content Include="web_admin\images\R1ATitleIconR.gif" />
+    <Content Include="web_admin\images\R1BBody.gif" />
+    <Content Include="web_admin\images\R1BItemIcon.gif" />
+    <Content Include="web_admin\images\R1BTitle.gif" />
+    <Content Include="web_admin\images\R1BTitleIcon.gif" />
+    <Content Include="web_admin\images\R1BTitleIconR.gif" />
+    <Content Include="web_admin\images\R1CBody.gif" />
+    <Content Include="web_admin\images\R1CItemIcon.gif" />
+    <Content Include="web_admin\images\R1CTitle.gif" />
+    <Content Include="web_admin\images\R1CTitleIcon.gif" />
+    <Content Include="web_admin\images\R1CTitleIconR.gif" />
+    <Content Include="web_admin\images\refresh.png" />
+    <Content Include="web_admin\images\refresh_off.gif" />
+    <Content Include="web_admin\images\refresh_on.gif" />
+    <Content Include="web_admin\images\rightturn.jpg" />
+    <Content Include="web_admin\images\save.gif" />
+    <Content Include="web_admin\images\save_off.gif" />
+    <Content Include="web_admin\images\save_on.gif" />
+    <Content Include="web_admin\images\Search_BG.jpg" />
+    <Content Include="web_admin\images\Search_sl_BG.jpg" />
+    <Content Include="web_admin\images\stop_refresh.png" />
+    <Content Include="web_admin\images\StrageShu.gif" />
+    <Content Include="web_admin\images\tabStrip\hover_tab_bg.gif" />
+    <Content Include="web_admin\images\tabStrip\hover_tab_left_icon.gif" />
+    <Content Include="web_admin\images\tabStrip\hover_tab_right_icon.gif" />
+    <Content Include="web_admin\images\tabStrip\selected_tab_bg.gif" />
+    <Content Include="web_admin\images\tabStrip\selected_tab_left_icon.gif" />
+    <Content Include="web_admin\images\tabStrip\selected_tab_right_icon.gif" />
+    <Content Include="web_admin\images\tabStrip\tab_bg.gif" />
+    <Content Include="web_admin\images\tabStrip\tab_left_icon.gif" />
+    <Content Include="web_admin\images\tabStrip\tab_right_icon.gif" />
+    <Content Include="web_admin\images\Tab_1.gif" />
+    <Content Include="web_admin\images\tab_2.gif" />
+    <Content Include="web_admin\images\time.gif" />
+    <Content Include="web_admin\images\uncheck.gif" />
+    <Content Include="web_admin\images\view_off.gif" />
+    <Content Include="web_admin\images\view_on.gif" />
+    <Content Include="web_admin\images\year.gif" />
+    <Content Include="web_admin\images\zoomin.gif" />
+    <Content Include="web_admin\images\zoomout.gif" />
+    <Content Include="web_admin\images\不接受.gif" />
+    <Content Include="web_admin\images\保存.gif" />
+    <Content Include="web_admin\images\修改.gif" />
+    <Content Include="web_admin\images\修改密码.gif" />
+    <Content Include="web_admin\images\修改配置.gif" />
+    <Content Include="web_admin\images\关闭.gif" />
+    <Content Include="web_admin\images\提交.gif" />
+    <Content Include="web_admin\images\搜索.gif" />
+    <Content Include="web_admin\images\查询.gif" />
+    <Content Include="web_admin\images\返回.gif" />
+    <Content Include="web_admin\images\选择宗地.gif" />
+    <Content Include="web_admin\js\My97DatePicker\calendar.js" />
+    <Content Include="web_admin\js\My97DatePicker\config.js" />
+    <Content Include="web_admin\js\My97DatePicker\lang\en.js" />
+    <Content Include="web_admin\js\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="web_admin\js\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="web_admin\js\My97DatePicker\My97DatePicker.htm" />
+    <Content Include="web_admin\js\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="web_admin\js\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="web_admin\js\My97DatePicker\skin\default\img.gif" />
+    <Content Include="web_admin\js\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="web_admin\js\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="web_admin\js\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="web_admin\js\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="web_admin\js\My97DatePicker\WdatePicker.js" />
+    <Content Include="web_admin\js\My97DatePicker\开发包\lang\en.js" />
+    <Content Include="web_admin\js\My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="web_admin\js\My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="web_admin\js\My97DatePicker\开发包\readme.txt" />
+    <Content Include="web_admin\js\My97DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="web_admin\js\My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="web_admin\js\My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="web_admin\js\My97DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="web_admin\js\My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="web_admin\js\My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="web_admin\js\My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="web_admin\login.htm" />
+    <Content Include="web_admin\list.htm" />
+    <Content Include="web_admin\test.htm" />
+    <Content Include="web_admin\detail.htm" />
+    <Content Include="web_admin\detail1.htm" />
+    <Content Include="web_admin\detail2.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="images\" />
+    <Folder Include="js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7259</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

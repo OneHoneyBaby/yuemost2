@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54F3A622-C20C-421C-9794-CE661C369C4F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tlw.ZPG.Domain</RootNamespace>
+    <AssemblyName>Tlw.ZPG.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentValidation">
+      <HintPath>..\lib\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enums\TradeDealType.cs" />
+    <Compile Include="Mapping\Account\AccountAttachMap.cs" />
+    <Compile Include="Models\Admin\ChangePasswordException.cs" />
+    <Compile Include="Models\Bid\Events\SubmitVerifyEvent.cs" />
+    <Compile Include="Models\Bid\Events\VerifyByUserEvent.cs" />
+    <Compile Include="Models\Bid\Events\GrantApplyNumberEvent.cs" />
+    <Compile Include="Models\Bid\Events\FrozeAccountEvent.cs" />
+    <Compile Include="Models\Bid\Events\RecoverAccountEvent.cs" />
+    <Compile Include="Models\Bid\Events\ResetPasswordEvent.cs" />
+    <Compile Include="Models\Bid\Events\LossAccountEvent.cs" />
+    <Compile Include="Mapping\Trade\TradeLogMap.cs" />
+    <Compile Include="Models\Bid\Events\AccountEventBase.cs" />
+    <Compile Include="Models\Bid\Exception\SubmitApplyException.cs" />
+    <Compile Include="Models\Bid\AccountAttach.cs" />
+    <Compile Include="Models\Bid\Exception\VerifyApplyException.cs" />
+    <Compile Include="Models\Bid\Exception\GrantApplyNumberException.cs" />
+    <Compile Include="Models\Bid\Exception\AccountFrozeException.cs" />
+    <Compile Include="Models\Bid\Exception\AccountRecoverException.cs" />
+    <Compile Include="DomainException.cs" />
+    <Compile Include="Enums\AfficheVerifyStatus.cs" />
+    <Compile Include="Enums\ButtonPosition.cs" />
+    <Compile Include="Enums\NewsType.cs" />
+    <Compile Include="Enums\TradeStage.cs" />
+    <Compile Include="Enums\TradeStatus.cs" />
+    <Compile Include="Enums\TradeLogType.cs" />
+    <Compile Include="Enums\SystemLogType.cs" />
+    <Compile Include="Enums\ApplyType.cs" />
+    <Compile Include="Enums\VerifyType.cs" />
+    <Compile Include="Mapping\Account\AccountMap.cs" />
+    <Compile Include="Mapping\Account\AccountVerifyMap.cs" />
+    <Compile Include="Mapping\Trade\AfficheFilterMap.cs" />
+    <Compile Include="Mapping\Trade\AfficheMap.cs" />
+    <Compile Include="Mapping\ApplyNumberMap.cs" />
+    <Compile Include="Mapping\Admin\FunctionMap.cs" />
+    <Compile Include="Mapping\ClientErrorLogMap.cs" />
+    <Compile Include="Mapping\CountyMap.cs" />
+    <Compile Include="Mapping\DictionaryMap.cs" />
+    <Compile Include="Mapping\DownloadMap.cs" />
+    <Compile Include="Mapping\FeedBookMap.cs" />
+    <Compile Include="Mapping\GuestBookMap.cs" />
+    <Compile Include="Mapping\Trade\LandAttachMap.cs" />
+    <Compile Include="Mapping\Trade\LandMap.cs" />
+    <Compile Include="Mapping\Admin\MenuMap.cs" />
+    <Compile Include="Mapping\NewsMap.cs" />
+    <Compile Include="Mapping\Account\PersonMap.cs" />
+    <Compile Include="Mapping\Trade\PurposeMap.cs" />
+    <Compile Include="Mapping\Admin\RoleMap.cs" />
+    <Compile Include="Mapping\SystemLogMap.cs" />
+    <Compile Include="Mapping\Trade\TradeDetailMap.cs" />
+    <Compile Include="Mapping\Trade\TradeMap.cs" />
+    <Compile Include="Mapping\Trade\TradeMessageMap.cs" />
+    <Compile Include="Mapping\Trade\TradeDealConfirmMap.cs" />
+    <Compile Include="Mapping\Trade\TradeResultAfficheMap.cs" />
+    <Compile Include="Mapping\Admin\UserMap.cs" />
+    <Compile Include="Mapping\Trade\LandPurposeMap.cs" />
+    <Compile Include="Models\Bid\Account.cs" />
+    <Compile Include="Enums\AccountStatus.cs" />
+    <Compile Include="Models\Bid\AccountVerify.cs" />
+    <Compile Include="Enums\AccountVerifyStatus.cs" />
+    <Compile Include="Models\Trading\Affiche.cs" />
+    <Compile Include="Models\Trading\AfficheFilter.cs" />
+    <Compile Include="Models\ApplyNumber.cs" />
+    <Compile Include="Models\Admin\Function.cs" />
+    <Compile Include="Models\County.cs" />
+    <Compile Include="Models\Dictionary.cs" />
+    <Compile Include="Models\Download.cs" />
+    <Compile Include="Models\FeedBook.cs" />
+    <Compile Include="Models\GuestBook.cs" />
+    <Compile Include="Models\Trading\Exception\SubmitPriceException.cs" />
+    <Compile Include="Models\Trading\Exception\AfficheReleaseException.cs" />
+    <Compile Include="Models\Trading\Exception\ReplenishException.cs" />
+    <Compile Include="Models\Trading\Land.cs" />
+    <Compile Include="Models\Attachment.cs" />
+    <Compile Include="Models\Admin\Menu.cs" />
+    <Compile Include="Models\News.cs" />
+    <Compile Include="Models\Bid\Person.cs" />
+    <Compile Include="Models\Trading\Purpose.cs" />
+    <Compile Include="Models\Admin\Role.cs" />
+    <Compile Include="Models\SystemLog.cs" />
+    <Compile Include="Models\Trading\Exception\TradeRecoverException.cs" />
+    <Compile Include="Models\Trading\Trade.cs" />
+    <Compile Include="Models\Trading\TradeDetail.cs" />
+    <Compile Include="Models\Trading\TradeMessage.cs" />
+    <Compile Include="Models\Trading\TradeResultAffiche.cs" />
+    <Compile Include="Models\Trading\TradeDealConfirm.cs" />
+    <Compile Include="Models\Admin\User.cs" />
+    <Compile Include="Models\ClientErrorLog.cs" />
+    <Compile Include="Models\Trading\LandPurpose.cs" />
+    <Compile Include="Models\Trading\TradeLog.cs" />
+    <Compile Include="Models\Trading\Exception\TradeFrozeException.cs" />
+    <Compile Include="Models\Trading\Exception\TradeTerminateException.cs" />
+    <Compile Include="Models\Trading\Exception\ConfirmTradeResultException.cs" />
+    <Compile Include="Models\Trading\Exception\VerifyTradeResultException.cs" />
+    <Compile Include="Models\Trading\Exception\SetReservePriceException.cs" />
+    <Compile Include="Models\Trading\LandAttach.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validators\AccountValidator.cs" />
+    <Compile Include="Validators\AfficheValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tlw.ZPG.Infrastructure\Tlw.ZPG.Infrastructure.csproj">
+      <Project>{d20803bc-8cec-44f9-8b70-50834c27b6ae}</Project>
+      <Name>Tlw.ZPG.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
